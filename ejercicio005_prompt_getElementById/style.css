@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+#nombre {
+    margin-right: 10px;
+}
+
+#altura {
+    margin-right: 10px;
+}
+
+#peso {
+    margin-right: 10px;
+}

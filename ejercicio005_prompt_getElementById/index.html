@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="funciones.js"></script>
+<body>
+    <div class="container">
+        <div id="nombre"></div>
+        <div id="altura"></div>
+        <div id="peso"></div>
+        <div id="IMC"></div>
+    </div>
+</body>
+</html>
+<script>
+    let nombre = prompt('¿Introduce tu nombre?');
+    let altura = prompt('¿Introduce tu altura?');
+    let peso = prompt('¿Introduce tu peso?');
+    document.getElementById('nombre').innerHTML=nombre;
+    document.getElementById('altura').innerHTML=altura;
+    document.getElementById('peso').innerHTML=peso;
+    document.getElementById('IMC').innerHTML=calculaIMC(peso,altura);
+</script>

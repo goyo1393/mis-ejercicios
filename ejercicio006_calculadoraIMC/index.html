@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+<h1>Calculadora de Indice Corporal</h1>
+
+<p>El cálculo es relativamente simple: consiste en dividir el peso, expresado en kilos, entre la estatura, en metros, elevada al cuadrado (kg/m2).</p>
+
+<form onsubmit="alert('Tu IMC es:',calculaIMC());return false">
+  <label for="nombre"> Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" placeholder="Introduce tu Nombre"><br>
+  <label for="altura">Altura:</label><br>
+  <input type="number" id="altura" name="altura" placeholder="Altura en cm"><br>
+  <label for="peso">Peso:</label><br>
+  <input type="number" id="peso" name="peso" placeholder="Peso en kg"><br><br>
+  <input type="submit" value="Calcular">
+</form>
+</body>
+</html>

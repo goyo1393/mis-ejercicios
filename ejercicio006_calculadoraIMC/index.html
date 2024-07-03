@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="funciones.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="funciones.js"></script>
 </head>
+
 <body>
-<h1>Calculadora de Indice Corporal</h1>
+  <div id="principal">
+    <h1>Calculadora de Indice Corporal</h1>
 
-<p>El cálculo es relativamente simple: consiste en dividir el peso, expresado en kilos, entre la estatura, en metros, elevada al cuadrado (kg/m2).</p>
+    <p>El cálculo es relativamente simple: consiste en dividir el peso, expresado en kilos, entre la estatura, en
+      metros,
+      elevada al cuadrado (kg/m2).</p>
 
-<form onsubmit="alert('Tu IMC es:',calculaIMC());return false">
-  <label for="nombre"> Nombre:</label><br>
-  <input type="text" id="nombre" name="nombre" placeholder="Introduce tu Nombre"><br>
-  <label for="altura">Altura:</label><br>
-  <input type="number" id="altura" name="altura" placeholder="Altura en cm"><br>
-  <label for="peso">Peso:</label><br>
-  <input type="number" id="peso" name="peso" placeholder="Peso en kg"><br><br>
-  <input type="submit" value="Calcular">
-</form>
+    <form onsubmit="calcular()">
+      <label for="nombre"> Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Introduce tu Nombre"><br>
+      <label for="altura">Altura:</label><br>
+      <input type="number" id="altura" name="altura" placeholder="Altura en cm"><br>
+      <label for="peso">Peso:</label><br>
+      <input type="number" id="peso" name="peso" placeholder="Peso en kg"><br><br>
+      <input type="submit" value="Calcular IMC"><br><br>
+      <div>Resultado:</div>
+      <div id="imcvalue"></div>
+    </form>
+  </div>
 </body>
 </html>
+<script>
+  function calcular (){
+    let nombreImc = document.getElementById('nombre').value;
+    let pesoImc = document.getElementById('peso').value;
+    let alturaImc = document.getElementById('altura').value;
+    let IMC = calculaIMC(pesoImc,alturaImc);
+    document.getElementById('imcvalue').innerHTML=IMC;
+    event.preventDefault(); 
+  }
+</script>

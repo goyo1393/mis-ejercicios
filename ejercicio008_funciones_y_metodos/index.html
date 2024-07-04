@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validations.js"></script>
+</head>
+
+<body>
+  <div id="principal">
+    <h1>Sign in</h1>
+
+    <form onsubmit="login()">
+      <label for="email"> Email:</label><br>
+      <input type="text" id="email" name="email" placeholder="Introduce tu Email"><br><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Introduce tu contraseña"><br><br>
+      <input type="submit" value="Login"><br><br>
+    </form>
+  </div>
+</body>
+</html>
+<script>
+  function login (){
+    let email = document.getElementById('email').value;
+    let password = document.querySelector('#password').value;
+    emailValidation(email, password);
+    event.preventDefault(); 
+  }
+</script>

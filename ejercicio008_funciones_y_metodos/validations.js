@@ -4,7 +4,7 @@ function emailValidation(email, password) {
     passwordError.textContent = '';
     if (email.indexOf("@") >= 0 & email.length > 5 & email.indexOf(".") >= 0) {
         errorMessage("", 'emailError');
-        if (password.toLowerCase().indexOf("a") >= 0 | password.toLowerCase().includes("IBM") != true | password.length < 6) {
+        if (password.toLowerCase().indexOf("a") >= 0 | !password.toLowerCase().includes("IBM") | password.length < 6) {
             errorMessage("", 'passwordError');
         } else {
             errorMessage("Error en Password", 'passwordError');

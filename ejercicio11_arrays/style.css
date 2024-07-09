@@ -1,0 +1,25 @@
+.cover 
+{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+.cover img {
+    width: 100%;
+}
+
+.buttonContainer {
+    position: relative;
+    border: black 1px solid;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+}

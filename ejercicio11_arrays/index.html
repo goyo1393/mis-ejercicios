@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cover"><img src="./images/cover1.jpg"></div>
+    <div class="cover"><img src="./images/cover2.jpg"></div>
+    <div class="cover"><img src="./images/cover3.jpg"></div>
+    <div class="cover"><img src="./images/cover4.jpg"></div>
+    <div class="cover"><img src="./images/cover5.jpg"></div>
+    <div class="cover"><img src="./images/cover6.jpg"></div>
+    <div id="buttonContainer">
+        <div class="flex">
+            <button id="anadir" onclick="aumentar()">+</button>
+            <button id="eliminar" onclick="decrementar()">-</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let ancho = 200;
+    let array = [];
+    let imagesArray = document.querySelectorAll(".cover");
+const aumentar = () => {
+    ancho++;
+    imagesArray.forEach(image => {
+        image.style.width=`${ancho}px`
+    });
+}
+
+const decrementar = () => {
+    ancho--;
+    imagesArray.forEach(image => {
+        image.style.width=`${ancho}px`
+    });
+}
+
+
+
+</script>

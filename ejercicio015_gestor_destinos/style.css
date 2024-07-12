@@ -4,12 +4,13 @@ body, html {
     font-family: Arial, sans-serif;
     color: #fff;
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: flex-start; /* Alinear al inicio verticalmente */
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: flex-start; /* Alinear al inicio verticalmente */
 }
 
 .bg-video {
-    position: fixed; /* Cambiado a fixed para cubrir la página completa */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,7 +27,7 @@ body, html {
 
 .form-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -58,19 +59,48 @@ button {
     cursor: pointer;
 }
 
+#cardContainer {
+    width: 400px;
+    height: 310px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display:flex;
+    justify-content:center;
+}
+
 .card {
-    position: inherit;
-    background-color: #333;
+    display: flex;
+    flex-direction: column;
     color: #fff;
+    background: steelblue;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 10px auto;
     text-align: center;
+    margin: 20px;
+    height: 280px;
 }
 
 .card img {
-    max-width: 100px;
-    border-radius: 5px;
+    width: 280px;
+    height: 360px;
+    margin-bottom: 10px;
+    border-radius: 120px;
+}
+
+#gButton {
+    background-color: green;
+}
+
+.card-name {
+    font-size: 1.5em; /* Tamaño de fuente mayor para el nombre */
+    font-weight: bold; /* Hacer el texto en negrita */
+    margin-bottom: 10px; /* Espacio debajo del nombre */
+    color: #ffdd57; /* Color amarillo dorado para el nombre */
+}
+
+.card-line {
+    font-size: 1.2em; /* Tamaño de fuente un poco más grande para la línea */
+    margin-bottom: 15px; /* Espacio debajo de la línea */
+    color: #87ceeb; /* Color azul claro para la línea */
 }

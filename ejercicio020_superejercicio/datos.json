@@ -1,0 +1,167 @@
+[
+    {
+        "nombre": "Pikachu",
+        "tipo": ["Eléctrico"],
+        "region": "Kanto",
+        "descripcion": "Pokémon ratón amarillo",
+        "ubicacion": {
+            "latitud": 35.6895,
+            "longitud": 139.6917
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png"
+    },
+    {
+        "nombre": "Charmander",
+        "tipo": ["Fuego"],
+        "region": "Kanto",
+        "descripcion": "Pokémon lagarto de fuego",
+        "ubicacion": {
+            "latitud": 35.0116,
+            "longitud": 135.7681
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png"
+    },
+    {
+        "nombre": "Bulbasaur",
+        "tipo": ["Planta", "Veneno"],
+        "region": "Kanto",
+        "descripcion": "Pokémon semilla con una planta en su espalda",
+        "ubicacion": {
+            "latitud": 34.6937,
+            "longitud": 135.5023
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png"
+    },
+    {
+        "nombre": "Squirtle",
+        "tipo": ["Agua"],
+        "region": "Kanto",
+        "descripcion": "Pokémon tortuga de agua",
+        "ubicacion": {
+            "latitud": 35.0116,
+            "longitud": 135.7681
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+    },
+    {
+        "nombre": "Jigglypuff",
+        "tipo": ["Normal", "Hada"],
+        "region": "Kanto",
+        "descripcion": "Pokémon globo con la habilidad de cantar para dormir a sus oponentes",
+        "ubicacion": {
+            "latitud": 35.6895,
+            "longitud": 139.6917
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/039.png"
+    },
+    {
+        "nombre": "Meowth",
+        "tipo": ["Normal"],
+        "region": "Kanto",
+        "descripcion": "Pokémon gato conocido por su habilidad para hablar el lenguaje humano",
+        "ubicacion": {
+            "latitud": 34.6937,
+            "longitud": 135.5023
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/052.png"
+    },
+    {
+        "nombre": "Psyduck",
+        "tipo": ["Agua"],
+        "region": "Kanto",
+        "descripcion": "Pokémon pato con constantes dolores de cabeza que desencadenan sus poderes psíquicos",
+        "ubicacion": {
+            "latitud": 34.6937,
+            "longitud": 135.5023
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/054.png"
+    },
+    {
+        "nombre": "Snorlax",
+        "tipo": ["Normal"],
+        "region": "Kanto",
+        "descripcion": "Pokémon perezoso que pasa la mayor parte del tiempo durmiendo",
+        "ubicacion": {
+            "latitud": 35.0116,
+            "longitud": 135.7681
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/143.png"
+    },
+    {
+        "nombre": "Gengar",
+        "tipo": ["Fantasma", "Veneno"],
+        "region": "Kanto",
+        "descripcion": "Pokémon sombra que puede atravesar paredes y asustar a sus enemigos",
+        "ubicacion": {
+            "latitud": 35.0116,
+            "longitud": 135.7681
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/094.png"
+    },
+    {
+        "nombre": "Eevee",
+        "tipo": ["Normal"],
+        "region": "Kanto",
+        "descripcion": "Pokémon con múltiples evoluciones posibles",
+        "ubicacion": {
+            "latitud": 34.6937,
+            "longitud": 135.5023
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/133.png"
+    },
+    {
+        "nombre": "Lucario",
+        "tipo": ["Lucha", "Acero"],
+        "region": "Sinnoh",
+        "descripcion": "Pokémon que puede sentir y manipular la energía aura",
+        "ubicacion": {
+            "latitud": 35.6895,
+            "longitud": 139.6917
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/448.png"
+    },
+    {
+        "nombre": "Garchomp",
+        "tipo": ["Dragón", "Tierra"],
+        "region": "Sinnoh",
+        "descripcion": "Pokémon dragón con forma de tiburón que puede volar a gran velocidad",
+        "ubicacion": {
+            "latitud": 35.0116,
+            "longitud": 135.7681
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/445.png"
+    },
+    {
+        "nombre": "Greninja",
+        "tipo": ["Agua", "Siniestro"],
+        "region": "Kalos",
+        "descripcion": "Pokémon ninja con habilidades acuáticas y oscuras",
+        "ubicacion": {
+            "latitud": 34.6937,
+            "longitud": 135.5023
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/658.png"
+    },
+    {
+        "nombre": "Togepi",
+        "tipo": ["Hada"],
+        "region": "Johto",
+        "descripcion": "Pokémon bebé que se cree trae buena suerte y felicidad",
+        "ubicacion": {
+            "latitud": 35.6895,
+            "longitud": 139.6917
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/175.png"
+    },
+    {
+        "nombre": "Cyndaquil",
+        "tipo": ["Fuego"],
+        "region": "Johto",
+        "descripcion": "Pokémon ratón de fuego que enciende su espalda cuando se siente amenazado",
+        "ubicacion": {
+            "latitud": 34.6937,
+            "longitud": 135.5023
+        },
+        "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png"
+    }
+]

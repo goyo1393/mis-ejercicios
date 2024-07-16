@@ -45,5 +45,5 @@ function handleError (code) {
 getPokemons("http://localhost",5500,"ejercicio020_superejercicio/datos.json");
 
 function filter (pokemonsForFilter) {
-    let pokemonsFilters = pokemonsForFilter.filter()
+    let pokemonsFilters = pokemonsForFilter.filter();
 }

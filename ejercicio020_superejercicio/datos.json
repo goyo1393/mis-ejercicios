@@ -1,7 +1,7 @@
 [
     {
         "nombre": "Pikachu",
-        "tipo": ["Eléctrico"],
+        "tipo": ["Electrico"],
         "region": "Kanto",
         "descripcion": "Pokémon ratón amarillo",
         "ubicacion": {
@@ -122,7 +122,7 @@
     },
     {
         "nombre": "Garchomp",
-        "tipo": ["Dragón", "Tierra"],
+        "tipo": ["Dragon", "Tierra"],
         "region": "Sinnoh",
         "descripcion": "Pokémon dragón con forma de tiburón que puede volar a gran velocidad",
         "ubicacion": {

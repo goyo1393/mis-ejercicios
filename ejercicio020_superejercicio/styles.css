@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .card {
@@ -30,6 +31,7 @@ body {
 .card h2 {
     margin: 0;
     padding: 10px 0;
+    text-transform: capitalize;
 }
 
 .card p {
@@ -116,6 +118,10 @@ body {
     box-shadow: 0 4px 8px rgba(255, 107, 107, 0.1);
 }
 
+.pokemonId {
+    color:#76768c
+}
+
 /* Navbar */
 
 ul {
@@ -175,6 +181,7 @@ li a:hover {
 	display: inline-flex;
 	align-items: center;
 	padding: 0;
+    margin-left: 10px;
 }
 .icon-button:hover {
 	background: linear-gradient(180deg, #cf466a 10%, #ee6381 100%);

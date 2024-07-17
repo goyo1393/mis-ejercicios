@@ -1,37 +1,41 @@
 const options = {
     method: "GET"
-  };
-  
-const pokemons = fetch("https://pokeapi.co/api/v2/pokemon/",options);
+};
+
+const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
+
+const pokemons = fetch(apiUrl, options);
 
 pokemons
-.then(response => response.text())
-.then(data => {
-   //console.log(JSON.parse(data).results)
-    showPokemons(data);
-});
+    .then(response => response.text())
+    .then(data => {
+        showPokemons(data);
+    });
 
-function showPokemons(pokemons){
-    let pokemonsList = JSON.parse(pokemons).results.map( detail => {
-        console.log(detail.url.at(-2));
-        let image = `https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${detail.url.at(-2)}.png`;
+function showPokemons(pokemons) {
+    let pokemonsList = JSON.parse(pokemons).results.map(detail => {
+        let pokemonNumber = detail.url.slice(-4, -1).replace(/\D/g, '');
+        pokemonNumber = pokemonNumber.padStart(3, '0');
+        let image = `https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${pokemonNumber}.png`;
         detail = {
             ...detail,
-            image
+            image,
+            id: pokemonNumber
         };
-        console.log(detail);
+        return detail;
     });
-    console.log(pokemonsList.results)
+    console.log(pokemonsList);
     pokemonsList.forEach(pokemon => {
         let card = `<div class="card">
-            <img src="${pokemon.url}">
+           <img src="${pokemon.image}">
             <h2>${pokemon.name}</h2>
+            <h2 class="pokemonId">#${pokemon.id}</h2>
         </div>`;
-        document.querySelector("#pokemonContainer").innerHTML+= card;
+        document.querySelector("#pokemonContainer").innerHTML += card;
     });
 }
 
-function handleError (code) {
+function handleError(code) {
     const errorMessage = `
         <div class="error-message">
             Ha ocurrido un error: ${code}. Por favor, intenta de nuevo.

@@ -18,8 +18,6 @@ const createCard = (temperament, img, race) => {
     let pRace = document.createElement("p");
     pRace.textContent = race;
     divCard.appendChild(pRace);
-
-
 }
 
 const cardGenerator = async () => {
@@ -44,7 +42,7 @@ document.querySelector("#dButton").addEventListener("click", () => {
 
 const finder = (value) => {
     let dogFilter = dogosArray.filter((dog) => {
-        return dog.breeds[0].name.includes(value)
+        return dog.breeds[0].name.toLowerCase().includes(value.toLowerCase())
     })
     document.querySelector("#dogos").innerHTML = "";
     dogFilter.forEach((dogo => {

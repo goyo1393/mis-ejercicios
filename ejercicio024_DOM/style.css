@@ -1,3 +1,10 @@
+main {
+ margin-top: 60px;
+}
+#dogos {
+    display: flex;
+    flex-wrap: wrap;
+}
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -5,6 +12,7 @@
     margin: 16px;
     max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 .card img {
     width: 100%;
@@ -18,3 +26,75 @@
     font-size: 1em;
     color: #666;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E6C2A4;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .navContainer {
+      position: fixed;
+      width: 100%;
+      top:0px;
+      right: 0px;    
+  }
+  
+  .options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #buscador {
+   height: 20px;
+  }
+  
+  .icon-button {
+      color: #FFFFFF;
+      font-size: 18px;
+      border-radius: 50px;
+      border: solid 3px #a3383f;
+      text-shadow: 1px 1px 0px #528ECC;
+      box-shadow: inset 1px 1px 0px 0px #BBDAF7;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      font-family: Arial;
+      background: linear-gradient(180deg, #ee6381 10%, #cf466a 100%);
+      display: inline-flex;
+      align-items: center;
+      padding: 0;
+      margin-left: 10px;
+  }
+  .icon-button:hover {
+      background: linear-gradient(180deg, #cf466a 10%, #ee6381 100%);
+  }
+  .icon-button-text {
+      position: relative;
+      padding: 9px 1px;
+  }
+  .icon-button-icon {
+      position: relative;
+      padding: 4px 6px;
+  }
+  

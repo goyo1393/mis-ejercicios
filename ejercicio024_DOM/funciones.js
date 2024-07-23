@@ -4,18 +4,20 @@ const createCard = (temperament, img, race) => {
 
     // Crea elemento div de carta inicial <div class="card"/>
     let divCard = document.createElement("div");
-    divCard.classList.add("cart");
+    divCard.classList.add("card");
     document.querySelector("#dogos").appendChild(divCard);
 
     let elementImg = document.createElement("img");
     elementImg.src = img;
-    elementImg.appendChild("#dogos");
+    divCard.appendChild(elementImg);
 
     let h2TemperamentElement = document.createElement("h2");
     h2TemperamentElement.textContent = temperament;
+    divCard.appendChild(h2TemperamentElement);
 
     let pRace = document.createElement("p");
     pRace.textContent = race;
+    divCard.appendChild(pRace);
 
 
 }
@@ -24,7 +26,6 @@ const cardGenerator = async () => {
     try {
         const response = await fetch(backend);
         dogosArray = await response.json();
-        console.log(dogosArray);
         dogosArray.forEach(dog => {
             createCard(dog.breeds[0].temperament, dog.url, dog.breeds[0].name);
         });
@@ -33,5 +34,23 @@ const cardGenerator = async () => {
         console.error('Error fetching data from the API:', e);
     }
 };
+
+document.querySelector("#dButton").addEventListener("click", () => {
+    let texto = document.querySelector("#buscador").value;
+    finder(texto);
+})
+
+
+
+const finder = (value) => {
+    let dogFilter = dogosArray.filter((dog) => {
+        return dog.breeds[0].name.includes(value)
+    })
+    document.querySelector("#dogos").innerHTML = "";
+    dogFilter.forEach((dogo => {
+        createCard(dogo.breeds[0].temperament, dogo.url, dogo.breeds[0].name);
+    }))
+};
+
 
 cardGenerator();

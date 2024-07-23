@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const app = express();
 const port = 3000;
-const getDogsUrl = "https://api.thedogapi.com/v1/images/search?limit=20&has_breeds=true";
+const getDogsUrl = "https://api.thedogapi.com/v1/images/search?limit=60&has_breeds=true";
 const APK = "live_wSZ4qJqqdQCA0yeMOwMV4hDMyGUBgr7Eq2dUlp3TRY6BlkY3Q1wkRqOOJpXbXp07";
 
 app.use(cors());

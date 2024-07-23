@@ -1,5 +1,8 @@
 const backend = "http://localhost:3000/";
 let dogosArray;
+const dButton = document.querySelector("#dButton");
+const buscador = document.querySelector("#buscador");
+
 const createCard = (temperament, img, race) => {
 
     // Crea elemento div de carta inicial <div class="card"/>
@@ -33,11 +36,21 @@ const cardGenerator = async () => {
     }
 };
 
-document.querySelector("#dButton").addEventListener("click", () => {
+const handleSearch = () => {
     let texto = document.querySelector("#buscador").value;
     finder(texto);
-})
+};
 
+if (dButton && buscador) {
+    dButton.addEventListener("click", handleSearch);
+    buscador.addEventListener("keyup", (event) => {
+        if (event.keyCode === 13) {
+            handleSearch();
+        }
+    })
+} else {
+    console.error('No se pudo encontrar el botón o el buscador en el DOM.');
+}
 
 
 const finder = (value) => {
